@@ -1,0 +1,43 @@
+.task {
+  width: 100%;
+  background: var(--gray-500);
+  border: 1px solid var(--gray-400);
+  padding: 1rem;
+  border-radius: 8px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.75rem;
+  font-size: 0.875rem;
+}
+
+.task p {
+  flex: 1;
+}
+
+p.textStroked {
+  text-decoration-line: line-through;
+  color: var(--gray-300);
+}
+
+.check {
+  background: none;
+  border: none;
+  color: var(--blue);
+}
+
+.check>svg:has(> path) {
+  color: var(--purple);
+}
+
+.deleteButton {
+  background: none;
+  border: none;
+  color: var(--gray-300);
+
+  transition: color 0.1s;
+}
+
+.deleteButton:hover {
+  color: var(--danger);
+}
